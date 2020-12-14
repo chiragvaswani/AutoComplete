@@ -20,7 +20,7 @@ function add(str, i, root) {
 }
 
 function search(str, i, root) {
-  if (i === str.length) return root.words
-  if (!root.map[str[i]]) return []
-  return search(str, i+, root.map[str[i]])
+  if (i === str.length) return root.words;
+  if (!root.map[str[i]]) return [];
+  return search(str, i + 1, root.map[str[i]]);
 }
