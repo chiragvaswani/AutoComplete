@@ -13,10 +13,14 @@ function add(str, i, root) {
 
   if (!root.map[str[i]])
     // check if the character we want to add already exists
-    root[str[i]] = new makeNode(str[i]);
+    root.map[str[i]] = new makeNode(str[i]);
 
   root.words.push(str); // add the word to the list
-  add(str, i + 1, root[str[i]]);
+  add(str, i + 1, root.map[str[i]]);
 }
 
-function search(str, i, root) {}
+function search(str, i, root) {
+  if (i === str.length) return root.words
+  if (!root.map[str[i]]) return []
+  return search(str, i+, root.map[str[i]])
+}
