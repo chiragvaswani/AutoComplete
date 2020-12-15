@@ -11,4 +11,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/form.html");
 });
 
+app.get("/search", (req, res) => {
+  res.sendFile(__dirname + "search.html");
+});
+
 app.listen(3000, () => console.log("Server running on port 3000"));
