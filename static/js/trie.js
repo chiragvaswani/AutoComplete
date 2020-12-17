@@ -15,9 +15,9 @@ function add(str, i, root) {
     // check if the character we want to add already exists
     root.map[str[i]] = new makeNode(str[i]);
 
-  console.log(root.words);
-  add(str, i + 1, root.map[str[i]]);
   root.words.push(str); // add the word to the list
+  // console.log(root.words); -> Debugging
+  add(str, i + 1, root.map[str[i]]);
 }
 
 function search(str, i, root) {
