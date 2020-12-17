@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -14,8 +14,10 @@
     />
   </head>
   <body>
+    <img src="images/pixeltrue-search-1.png" alt="" width="400px" />
+
     <div class="container">
-      <h1 class="top">Autocomplete application</h1>
+      <h1 class="top">Search for a user!</h1>
     </div>
 
     <main>
@@ -25,13 +27,13 @@
             type="text"
             class="form-control"
             id="text-box"
-            placeholder="Enter your username"
+            placeholder="Enter username"
           />
         </div>
         <ul id="list"></ul>
       </div>
     </main>
-    <script src="./trie.js"></script>
-    <script src="index.js"></script>
+    <script src="js/trie.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,4 +1,11 @@
-const items = ["user1", "user2", "user3", "admin1", "admin2"];
+var items = ["user1", "user2", "user3", "admin1", "admin2"];
+
+const cookie = document.cookie.split("; ");
+// const sport = document.cookie.slice([document.cookie.indexOf("name") + 5]);
+for (item of cookie) {
+  const sport = item.split("=")[0];
+  items.push(sport);
+}
 
 const root = new makeNode("\0");
 for (const item of items) add(item, 0, root);
