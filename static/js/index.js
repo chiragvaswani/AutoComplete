@@ -1,4 +1,4 @@
-var items = ["user1", "user2", "user3", "admin1", "admin2"];
+var items = []; // list of all users
 
 const cookie = document.cookie.split("; ");
 // const sport = document.cookie.slice([document.cookie.indexOf("name") + 5]);
